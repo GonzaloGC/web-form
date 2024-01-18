@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  font-family: monospace, "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Cochin, Georgia, Times,
     "Times New Roman", serif;
 }
@@ -16,36 +16,66 @@ body {
   background-image: url(/imgs/bgOso.png);
 }
 legend {
-  font-size: x-large;
+  font-size: xx-large;
   color: antiquewhite;
   text-align: center;
-  margin: 30px 0 20px 0;
+  margin: 30px 0 40px 0;
 }
 .formulario {
-  width: 500px;
+  width: 400px;
   height: 400px;
   padding-left: 10px;
-  border: 0.3px solid rgba(105, 90, 205, 0.404);
-  border-radius: 5px;
-  backdrop-filter: blur(5px);
-}
-label {
-  font-size: medium;
-  font-style: italic;
-  color: aqua;
+  border: 2px solid rgba(90, 121, 205, 0.247);
+  border-radius: 10px;
+  backdrop-filter: blur(40px);
 }
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 input {
   width: 300px;
-  border-color: bisque;
-  border-radius: 6px;
+  height: 50px;
+  color: aqua;
+  border-radius: 25px;
+  background-color: transparent;
 }
-.button-env {
+input[type="text"] {
+  color: aliceblue;
+  border-color: rgba(255, 255, 255, 0.555);
+  padding-left: 15px;
+}
+input::placeholder {
+  color: white;
+}
+.container-button {
+  position: relative;
   display: flex;
   justify-content: center;
-  padding-top: 25px;
+  align-items: center;
+  padding-top: 10px;
+}
+.button-env {
+  font-weight: bolder;
+  color: black;
+  border-color: white;
+  background-color: white;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-top: 20px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  width: 30px;
 }
