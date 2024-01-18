@@ -39,18 +39,33 @@ form {
 input {
   width: 300px;
   height: 50px;
-  color: aqua;
   border-radius: 25px;
   background-color: transparent;
 }
 input[type="text"] {
-  color: aliceblue;
-  border-color: rgba(255, 255, 255, 0.555);
-  padding-left: 15px;
+  padding: 0 15px 0 15px;
+  background-image: url(/imgs/icons/mail-outline.svg);
+  background-repeat: no-repeat;
+  background-position: 90%;
+  background-size: 20px;
+  filter: invert(100%);
 }
+input[type="password"] {
+  padding: 0 15px 0 15px;
+  background-image: url(/imgs/icons/key-outline.svg);
+  background-repeat: no-repeat;
+  background-position: 90%;
+  background-size: 20px;
+  filter: invert(100%);
+}
+.pass path {
+  fill: #ffffff;
+}
+
 input::placeholder {
-  color: white;
+  color: black;
 }
+
 .container-button {
   position: relative;
   display: flex;
@@ -62,7 +77,7 @@ input::placeholder {
   font-weight: bolder;
   color: black;
   border-color: white;
-  background-color: white;
+  background-color: #ffffff;
 }
 .icons {
   display: flex;
@@ -72,10 +87,14 @@ input::placeholder {
   margin-top: 20px;
 }
 a {
-  color: white;
   text-decoration: none;
 }
 
-img {
+.icongoogle {
   width: 30px;
+  filter: invert(100%);
+}
+.iconface {
+  width: 30px;
+  filter: invert(100%);
 }
