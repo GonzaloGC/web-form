@@ -10,9 +10,19 @@
   <body>
     <section class="container">
       <section class="formulario">
-        <legend>Información</legend>
-        <form action="text">
+        <legend>Datos de Contacto</legend>
+        <form>
+          <label for="nombre">Nombre completo</label>
           <input type="text" name="nombre" placeholder="Nombre" />
+
+          <label for="email">Correo electrónico</label>
+          <input type="text" name="email" placeholder="Email" />
+
+          <label for="telefono">Número de teléfono</label>
+          <input type="number" name="telefono" placeholder="Telefono" />
+          <div class="button-env">
+            <input type="submit" value="Enviar" />
+          </div>
         </form>
       </section>
     </section>
